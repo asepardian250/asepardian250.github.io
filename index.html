@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Asep</title>    
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        h1{
+            color: #3279a8;
+            transition: 1s;
+        }
+        
+        h1:hover{            
+            color: #e08036;
+        }
+
+        .img_circle{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;                                           
+            display:inline-block;
+            vertical-align:middle;
+            border: white 10px solid;            
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            margin: 40px 0px;            
+        }
+
+        .img_circle > img{
+            width: 100%;
+            transition: transform .2s;
+        }
+
+        .img_circle > img:hover{
+            transform: scale(1.2);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>
+        Hello World HTML
+    </h1>
+    <table>
+        <tr>
+            <td>Nama</td>
+            <td> : </td>
+            <td>Asep Ardiansyah Muhammad Suhendi</td>            
+        </tr>
+        <tr>
+            <td>NIM</td>
+            <td> : </td>
+            <td>41215361</td>
+        </tr>
+        <tr>
+            <td>Kelas</td>
+            <td> : </td>
+            <td>TI-2021-KIP-P10</td>
+        </tr>
+        <tr>
+            <td>Prodi</td>
+            <td> : </td>
+            <td>Teknik Informatika</td>
+        </tr>
+    </table>
+
+    <div class="img_circle">
+        <img src="./asset/img/foto.jpeg" alt="">
+    </div>
+
+    <hr>
+
+    <button id="helloHandler">Tekan untuk muncul</button>
+
+    <script>
+        document.querySelector('#helloHandler').addEventListener('click', () => {
+            alert("Hello Saya pake JS")
+        })
+    </script>
+</body>
+</html>
